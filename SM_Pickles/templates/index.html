@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Pickles — Real Pickles. Real Flavour.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../static/css/main.css" />
+  <style>
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav" id="nav">
+    <div class="container-xl">
+      <a class="navbar-brand" href="#">
+        <img src="../static/img/final-logo.png" alt="SM Pickles Logo" class="logo-img nav-logo" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow: none;">
+        <svg viewBox="0 0 100 80" width="28" height="28" style="fill: var(--text); pointer-events: none;">
+          <rect width="100" height="12" rx="6"></rect>
+          <rect y="34" width="100" height="12" rx="6"></rect>
+          <rect y="68" width="100" height="12" rx="6"></rect>
+        </svg>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto nav-links">
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-right ms-auto d-flex align-items-center gap-3 mt-3 mt-lg-0">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <div class="toggle-track">
+              <div class="toggle-thumb" id="toggleThumb"><i class="bi bi-moon-fill" style="font-size: 0.8rem; color: #1e5c2a;"></i></div>
+            </div>
+            <span class="toggle-label" id="toggleLabel">Classic</span>
+          </button>
+          <button class="contact-nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Contact Us <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-media" aria-hidden="true">
+      <img src="../static/img/pickle_scene_no_watermark.png" alt="" class="hero-image" />
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-eyebrow">Homemade · No Preservatives · Pure Flavour</div>
+      <h1>Real Pickles.<br><em>Bold</em> Taste.<br>Every Jar.</h1>
+      <p class="hero-sub">We make pickles the old way — fresh vegetables, hand-packed jars, and a family recipe passed down three generations. No factory. No shortcuts. Just real, delicious pickle.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">
+          See Our Pickles <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+        <button class="btn-secondary" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+          Our Story
+        </button>
+      </div>
+      <div class="hero-stats row w-100 justify-content-center mt-5 pt-4">
+        <div class="col-4 col-md-auto text-center">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Natural</div>
+        </div>
+        <div class="col-4 col-md-auto text-center">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">Flavours</div>
+        </div>
+        <div class="col-4 col-md-auto text-center">
+          <div class="stat-num">4.9<i class="bi bi-star-fill text-warning ms-1" style="font-size: 1.5rem;"></i></div>
+          <div class="stat-label">Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Made by Hand <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Fresh Vegetables Only <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">No Preservatives <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Veg &amp; Non-Veg Varieties <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Bold Flavours <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">From Our Family Kitchen <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Made by Hand <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Fresh Vegetables Only <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">No Preservatives <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Veg &amp; Non-Veg Varieties <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">Bold Flavours <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+      <span class="marquee-item">From Our Family Kitchen <span class="marquee-sep"><i class="bi bi-asterisk"></i></span></span>
+    </div>
+  </div>
+
+  <!-- STORY -->
+  <section class="section story" id="story">
+    <div class="container section-inner">
+      <div class="row align-items-center gy-5">
+        <div class="col-12 col-md-6 story-visual fade-up">
+          <div class="story-img-box"><i class="bi bi-shop"></i>
+            <div class="story-img-accent"><i class="bi bi-tree-fill"></i></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 story-text fade-up">
+          <div class="section-tag">Our Story</div>
+          <h2 class="section-title">Made with<br>Love & Care</h2>
+          <blockquote class="story-pull">
+            "Every cucumber is chosen by hand. Every jar is packed with care. That's just how we do it."
+          </blockquote>
+          <p class="story-body">SM Pickles started in a home kitchen in Hyderabad. The goal was simple — make pickles so good that people keep coming back for more. We use fresh vegetables, our family's original recipe, and no chemical shortcuts.</p>
+          <p class="story-body">We make small batches so every jar gets the attention it deserves. When you open an SM Pickles jar, you can taste the difference.</p>
+          <div class="process-steps">
+            <div class="step">
+              <div class="step-num">01</div>
+              <div class="step-text">
+                <strong>We Pick Fresh</strong>
+                <p>Vegetables sourced from local farms, used while fresh — never stored for weeks.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">02</div>
+              <div class="step-text">
+                <strong>We Add Our Recipe</strong>
+                <p>Our spice mix has been used for three generations. Simple ingredients, deep flavour.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">03</div>
+              <div class="step-text">
+                <strong>We Pack by Hand</strong>
+                <p>Each jar is filled, sealed, and labelled by hand. You taste the care in every bite.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SM PICKLES — ZIPPER STYLE -->
+  <section class="section feature" id="why">
+    <div class="container section-inner">
+      <div class="feature-header">
+        <div class="section-tag">Why SM Pickles</div>
+        <h2 class="section-title">What Makes Us Different</h2>
+      </div>
+      <div class="zipper-container">
+        <div class="zipper-spine"></div>
+
+        <div class="zipper-item fade-up">
+          <div class="zipper-content">
+            <div class="zipper-tag">All Natural</div>
+            <h3>Nothing Artificial</h3>
+            <p>No preservatives, no artificial colours, no added chemicals. Just vegetables, spices, and salt — exactly as it should be.</p>
+          </div>
+          <div class="zipper-node"><i class="bi bi-tree-fill"></i></div>
+          <div class="zipper-placeholder"></div>
+        </div>
+
+        <div class="zipper-item fade-up">
+          <div class="zipper-placeholder"></div>
+          <div class="zipper-node"><i class="bi bi-fire"></i></div>
+          <div class="zipper-content">
+            <div class="zipper-tag">Bold Flavours</div>
+            <h3>Mild to Very Spicy</h3>
+            <p>We have something for everyone — from light, mild jars perfect for everyday meals, to fiery hot pickles for those who love the heat.</p>
+          </div>
+        </div>
+
+        <div class="zipper-item fade-up">
+          <div class="zipper-content">
+            <div class="zipper-tag">Handcrafted</div>
+            <h3>Packed by Hand, Always</h3>
+            <p>Every single jar is filled and sealed by hand in our kitchen. No machines, no production lines — just people who care about quality.</p>
+          </div>
+          <div class="zipper-node"><i class="bi bi-box-seam-fill"></i></div>
+          <div class="zipper-placeholder"></div>
+        </div>
+
+        <div class="zipper-item fade-up">
+          <div class="zipper-placeholder"></div>
+          <div class="zipper-node"><i class="bi bi-egg-fried"></i></div>
+          <div class="zipper-content">
+            <div class="zipper-tag">Veg &amp; Non-Veg</div>
+            <h3>For Every Family</h3>
+            <p>We make both vegetarian and non-vegetarian pickles. Whatever your food tradition, there's an SM Pickles jar for your table.</p>
+          </div>
+        </div>
+
+        <div class="zipper-item fade-up">
+          <div class="zipper-content">
+            <div class="zipper-tag">Small Batch</div>
+            <h3>Never Mass-Produced</h3>
+            <p>We make small batches on purpose. Fewer jars means more attention on each one — and a better pickle in your hands.</p>
+          </div>
+          <div class="zipper-node"><i class="bi bi-stars"></i></div>
+          <div class="zipper-placeholder"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section products" id="shop">
+    <div class="section-inner">
+      <div class="products-header">
+        <div>
+          <div class="section-tag">Our Pickles</div>
+          <h2 class="section-title">Find Your Favourite</h2>
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="veg">Veg</button>
+          <button class="filter-tab" data-filter="nonveg">Non Veg</button>
+          <button class="filter-tab" data-filter="popular">Popular</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+
+        <div class="product-card fade-up" data-category="veg" data-popular="true">
+          <div class="card-visual">
+            <!-- <img src="../static/img/mango-pickle-mockup.png" alt="Mango Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/mango-pickle.png" alt="Mango Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+            <span class="card-new">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Mango Pickle</div>
+            <div class="card-desc">A classic homemade mango pickle with bold spice, rich oil, and the full Andhra-style kick in every spoon.</div>
+            <div class="card-footer">
+              <div class="card-price">₹299</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Lemon-Pickle-mockup.png" alt="Lemon Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/lemon-pickle.png" alt="Lemon Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Lemon Pickle</div>
+            <div class="card-desc">Bright, tangy, and deeply savoury, made for the kind of meal that needs one sharp, punchy side on the plate.</div>
+            <div class="card-footer">
+              <div class="card-price">₹269</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Tomato-Pickle-Mockup.png" alt="Tomato Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/tomato-pickle.png" alt="Tomato Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Tomato Pickle</div>
+            <div class="card-desc">Smooth, spicy, and slightly tangy, this tomato pickle brings a rich homemade flavour that goes beautifully with rice and tiffins.</div>
+            <div class="card-footer">
+              <div class="card-price">₹279</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="true">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Gongura-Pickle-Mockup.png" alt="Gongura Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/gongura-transparent.png" alt="Gongura Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+            <span class="card-new">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Gongura Pickle</div>
+            <div class="card-desc">Earthy gongura leaves packed into a bold, traditional pickle with deep spice and the signature Andhra tang.</div>
+            <div class="card-footer">
+              <div class="card-price">₹319</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Gooseberry-Pickle-Mockup.png" alt="Gooseberry Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/gooseberry-pickle.png" alt="Gooseberry Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Gooseberry Pickle</div>
+            <div class="card-desc">Amla done the homemade way with a lively balance of tartness, spice, and that satisfying old-style finish.</div>
+            <div class="card-footer">
+              <div class="card-price">₹289</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Kothimeera-Pickle-Mockup.png" alt="Kothimeera Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/kothimeera-pickle.png" alt="Kothimeera Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Kothimeera Pickle</div>
+            <div class="card-desc">Fresh coriander flavour layered with spice and oil for a fragrant pickle that tastes lively and comforting at once.</div>
+            <div class="card-footer">
+              <div class="card-price">₹279</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Podina-pickle-mockup.png" alt="Podina Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/Podina-Pickle.png" alt="Podina Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Podina Pickle</div>
+            <div class="card-desc">Cool mint notes, punchy masala, and a homemade texture that makes even a simple meal feel extra special.</div>
+            <div class="card-footer">
+              <div class="card-price">₹269</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="veg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Red-Chilli-Pickle-Mockup.png" alt="Red Chilli Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/red-chilli-pickle.png" alt="Red Chilli Pickle jar" loading="lazy" />
+            <span class="card-badge">Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Veg Pickle</div>
+            <div class="card-name">Red Chilli Pickle</div>
+            <div class="card-desc">For spice lovers who want a sharper edge, this red chilli pickle is fiery, bold, and unmistakably homemade.</div>
+            <div class="card-footer">
+              <div class="card-price">₹309</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="nonveg" data-popular="true">
+          <div class="card-visual">
+            <!-- <img src="../static/img/chicken-pickle-mockup.png" alt="Chicken Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/chicken-pickle.png" alt="Chicken Pickle jar" loading="lazy" />
+            <span class="card-badge">Non Veg</span>
+            <span class="card-new">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Non Veg Pickle</div>
+            <div class="card-name">Chicken Pickle</div>
+            <div class="card-desc">Tender chicken pieces coated in rich spice and oil for a full-flavoured pickle that is bold, savoury, and crowd-pleasing.</div>
+            <div class="card-footer">
+              <div class="card-price">₹399</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="nonveg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/fish-pickle-mockup.png" alt="Fish Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/fish-pickle.png" alt="Fish Pickle jar" loading="lazy" />
+            <span class="card-badge">Non Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Non Veg Pickle</div>
+            <div class="card-name">Fish Pickle</div>
+            <div class="card-desc">A coastal-style fish pickle with deep spice, tender bites, and a rich finish that works beautifully with rice and snacks.</div>
+            <div class="card-footer">
+              <div class="card-price">₹419</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="nonveg" data-popular="false">
+          <div class="card-visual">
+            <!-- <img src="../static/img/mutton-pickle-mockup.png" alt="Mutton Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/mutton-pickle.png" alt="Mutton Pickle jar" loading="lazy" />
+            <span class="card-badge">Non Veg</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Non Veg Pickle</div>
+            <div class="card-name">Mutton Pickle</div>
+            <div class="card-desc">Rich, meaty, and packed with masala, this mutton pickle brings a hearty homemade taste with serious depth.</div>
+            <div class="card-footer">
+              <div class="card-price">₹469</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card fade-up" data-category="nonveg" data-popular="true">
+          <div class="card-visual">
+            <!-- <img src="../static/img/Prawns-pickle-Mockup.png" alt="Prawns Pickle jar" loading="lazy" /> -->
+            <img src="../static/img/demo/prawns-pickle.png" alt="Prawns Pickle jar" loading="lazy" />
+            <span class="card-badge">Non Veg</span>
+            <span class="card-new">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-heat">Non Veg Pickle</div>
+            <div class="card-name">Prawns Pickle</div>
+            <div class="card-desc">Juicy prawns, balanced spice, and that unmistakable homemade finish make this one of the standout jars in the collection.</div>
+            <div class="card-footer">
+              <div class="card-price">₹449</div>
+              <button class="enquire-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Enquire <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="container section-inner">
+      <div style="text-align: center; margin-bottom: 1rem;">
+        <div class="section-tag">Customer Reviews</div>
+        <h2 class="section-title">People Love It</h2>
+      </div>
+      <div class="row review-grid g-4 mt-3">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card fade-up h-100">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="review-text">"The Spicy Garlic pickle is amazing. I add it to every meal now. Even my kids love it!"</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar"><i class="bi bi-emoji-laughing-fill text-success"></i></div>
+              <div>
+                <div class="reviewer-name">Arjun Reddy</div>
+                <div class="reviewer-loc">Hyderabad</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card fade-up h-100">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="review-text">"Bought the Classic Dill as a gift. My mother loved it so much she asked me to order two more jars."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar"><i class="bi bi-emoji-smile-fill text-primary"></i></div>
+              <div>
+                <div class="reviewer-name">Priya Sharma</div>
+                <div class="reviewer-loc">Bangalore</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="review-card fade-up h-100">
+            <div class="review-stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="review-text">"The Ghost Chili pickle is seriously hot — but the flavour is incredible. Already on my third jar."</p>
+            <div class="reviewer">
+              <div class="reviewer-avatar"><i class="bi bi-emoji-dizzy-fill text-danger"></i></div>
+              <div>
+                <div class="reviewer-name">Karthik Nair</div>
+                <div class="reviewer-loc">Chennai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT US -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-header">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">We'd Love to Hear from You</h2>
+        <p style="color:var(--text2); max-width:480px; margin: 0.5rem auto 0; font-size:0.97rem; line-height:1.75;">
+          Want to place a bulk order, send a gift, or just ask a question? Write to us — we reply personally.
+        </p>
+      </div>
+      <div class="row contact-grid gy-5">
+        <div class="col-12 col-lg-6 contact-info fade-up">
+          <h3>Based in Hyderabad</h3>
+          <p>Reach us for bulk orders, gifting, or any questions about our pickles. Every message is read and replied to by us — not a bot.</p>
+          <div class="contact-detail">
+            <span><i class="bi bi-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="contact-detail">
+            <span><i class="bi bi-envelope"></i></span>
+            <span>hello@smpickles.in</span>
+          </div>
+          <div class="contact-detail">
+            <span><i class="bi bi-geo-alt"></i></span>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="contact-detail">
+            <span><i class="bi bi-clock"></i></span>
+            <span>Mon–Sat, 9 AM – 6 PM</span>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 contact-form fade-up">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="contactName" placeholder="e.g. Arjun Reddy" />
+            <label for="contactName">Your Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="contactPhone" placeholder="We'll reply here" />
+            <label for="contactPhone">Phone / Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <select class="form-select" id="contactInterest">
+              <option>Placing an Order</option>
+              <option>Wholesale / Bulk</option>
+              <option>Gift Hampers</option>
+              <option>Just saying hello</option>
+            </select>
+            <label for="contactInterest">I'm interested in</label>
+          </div>
+          <div class="form-floating mb-4">
+            <textarea class="form-control" placeholder="Tell us what you'd like..." id="contactMessage" style="height: 120px"></textarea>
+            <label for="contactMessage">Message</label>
+          </div>
+          <button class="form-submit btn-premium w-100" onclick="document.getElementById('toast').innerHTML='Message sent! We\'ll be in touch soon <i class=\'bi bi-check-circle-fill text-success ms-2\'></i>'; document.getElementById('toast').classList.add('show'); setTimeout(()=>document.getElementById('toast').classList.remove('show'),3000)">
+            Send Message <i class="bi bi-send ms-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="section-inner">
+      <h2>Be the First to Know<br>About New Flavours</h2>
+      <p>Join 2,400+ pickle lovers. Get notified when new jars drop and receive special offers.</p>
+      <div class="email-form">
+        <input class="email-input" type="email" placeholder="your@email.com" />
+        <button class="btn-white">Subscribe Free</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="row footer-top gy-4">
+        <div class="col-12 col-lg-4 pe-lg-5">
+          <img src="../static/img/final-logo.png" alt="SM Pickles Logo" class="logo-img footer-logo-img mb-3" style="width: 120px; height: 120px;" />
+          <p style="color: var(--text3); font-size: 0.95rem; line-height: 1.6;">Bringing the authentic, bold flavours of homemade Andhra pickles straight to your table. Packed with love, spiced with tradition.</p>
+        </div>
+        <div class="col-6 col-lg-4 footer-col ps-lg-4">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#shop">All Products</a></li>
+            <li><a href="#shop">Veg Range</a></li>
+            <li><a href="#shop">Non Veg Range</a></li>
+            <li><a href="#">Gift Bundles</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4 footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#">How It's Made</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 SM Pickles. All rights reserved. Made with <i class="bi bi-fire text-danger mx-1"></i> in Hyderabad.</div>
+        <div class="social-links">
+          <a class="social-link" href="#"><i class="bi bi-instagram"></i></a>
+          <a class="social-link" href="#"><i class="bi bi-twitter-x"></i></a>
+          <a class="social-link" href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const toggleThumb = document.getElementById('toggleThumb');
+    const toggleLabel = document.getElementById('toggleLabel');
+
+    const applyTheme = (theme) => {
+      html.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        toggleThumb.innerHTML = '<i class="bi bi-fire" style="font-size: 0.8rem; color: #ff4422;"></i>';
+        toggleLabel.textContent = 'Spicy';
+      } else {
+        toggleThumb.innerHTML = '<i class="bi bi-moon-fill" style="font-size: 0.8rem; color: #1e5c2a;"></i>';
+        toggleLabel.textContent = 'Classic';
+      }
+      localStorage.setItem('sm-theme', theme);
+    };
+
+    const saved = localStorage.getItem('sm-theme') || 'light';
+    applyTheme(saved);
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    document.querySelectorAll('.filter-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        document.querySelectorAll('.product-card').forEach(card => {
+          const matchesFilter =
+            filter === 'all' ||
+            (filter === 'popular' && card.dataset.popular === 'true') ||
+            card.dataset.category === filter;
+          card.style.display = matchesFilter ? '' : 'none';
+        });
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('nav');
+      nav.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.08)' : 'none';
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
